@@ -11,25 +11,26 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <script src="https://kit.fontawesome.com/a11115a7cb.js" crossorigin="anonymous"></script>
 
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
        <link rel="stylesheet" href="estilos portafolio.css">
-       <script src="codigooo.js"></script>
 
     </head>
 
     <body>
         <header>
-            <nav class="navbar">
+            <nav class="navbar" id="articulo-head">
                 <div class="contenedor">
                     <a href="#">Inicio</a>
                     <a href="#articulo-1">Sobre Mi</a>
                     <a href="#articulo-2">Conocimiento</a>
-                    <a href="#">Experiencia</a>
-                    <a href="#">Contacto</a>
+                    <a href="#articulo-3">Experiencia</a>
+                    <a href="index.html" target="_blank">Registrarte</a>
                 </div>
             </nav>
             <div class="contenedor-imagen">
+                <h1 class="subtituloo"> Mi Portafolio</h1>
                 <a href="#">
-                    <img src="https://images.pexels.com/photos/5380584/pexels-photo-5380584.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-5380584.jpg&fm=jpg" alt="">
+                    <img src="miniaturas/pexels-tima-miroshnichenko-5380584.jpg" alt="">
                 </a>
             </div>
         </header>
@@ -37,7 +38,7 @@
             <section>
                 <article class="principal" id="articulo-1">
 
-                <div class="container__cards">
+                <div class="container__cards" data-aos="fade-right">
 
                     <div class="card">
                         <div class="cover">
@@ -47,29 +48,95 @@
                         <div class="description">
                             <h2>GENARO LEVATO</h2>
                             <p>Hola soy genaro levato y soy un programador full stack, domino muchos lenguajes y soy muy creativo.</p>
-                            <input type="button" value="Contacto">
+                            <input type="button" value="Contacto" id="btn-abrir-modal">
                         </div>
+
+
+                        <dialog id="modal">
+                        <section class="form-contact">
+                            <section class="cartita">
+                              <span>
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                              </span>
+                            </section>
+                        
+                            <form action="enviar.php" class="contact" method="POST">
+                              <label for="name">Nombres</label>
+                              <input type="text" name="nombres" id="nombres">
+                        
+                              <label for="mail">Correo</label>
+                              <input type="text" name="correo" id="correo">
+                        
+                              <label for="phone">Celular</label>
+                              <input type="text" name="celular" id="celular">
+                        
+                              <label for="message">Mensaje</label>
+                              <textarea name="mensaje" id="mensaje"></textarea>
+                              <input type="submit" value="Enviar" id="btn-cerrar-modal">
+                        
+                        
+                            </form>
+                          </section>
+                        </dialog>
+
+                    </div>
+
+                </article>
+            </section>
+            <script src="codigo portafolio.js"></script>
+
+
+            
+            <section>
+                <article class="segundo" id="articulo-2">
+
+                    <div class="container__img">
+                        <h2 class="informacion">MIS CONOCIMIENTOS</h2>
+                        <div class="sobre-mii">
+
+                            <div class="skills" data-aos="fade-up"><img src="miniaturas/php.png" alt="php">
+                                 <img class="php-imagen" src="miniaturas/php puntos.png" alt="php puntos" title="nivel de php">
+                            </div>
+
+                            <div class="skills" data-aos="fade-up"><img src="miniaturas/css.png" alt="css">
+                                 <img class="css-imagen" src="miniaturas/html puntoss.png" alt="css puntos" title="nivel de css">
+                            </div>
+
+                            <div class="skills" data-aos="fade-up"><img src="miniaturas/html.png" alt="html">
+                                 <img class="html-imagen" src="miniaturas/html puntoss.png" alt="html puntos" title="nivel de html">
+                            </div>
+
+                            <div class="skills" data-aos="fade-up"><img src="miniaturas/Email campaign_Monochromatic.svg" alt="fotito">
+                            </div>
+
+                            <div class="skills" data-aos="fade-up"><img src="miniaturas/javascript.png" alt="java script">
+                                 <img class="js-imagen" src="miniaturas/java s puntos.png" alt="js puntos" title="nivel de js">
+                            </div>
+
+                            <div class="skills" data-aos="fade-up"><img src="miniaturas/java.png" alt="java">
+                                 <img class="java-imagen" src="miniaturas/php puntos.png" alt="java puntos" title="nivel de java">
+                            </div>
+
+                            <div class="skills" data-aos="fade-up"><img src="miniaturas/angular.png" alt="angular">
+                                 <img class="angular-imagen" src="miniaturas/php puntos.png" alt="angular puntos" title="nivel de angular">
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </article>
             </section>
 
             <section>
-                <article class="segundo" id="articulo-2">
+                <article class="tercero" id="articulo-3">
 
-                    <div class="container__img">
-
-                        <div class="sobre-mi">
-                            <h2 class="informacion">SOBRE MI</h2>
-                            <img src="" alt="html">
-                            <img src="" alt="css">
-                            <img src="" alt="java script">
-                            <img src="" alt="phyton">
-                            <img src="" alt="mysql">
-                            <img src="" alt="angular">
-                        </div>
-
-                    </div>
+                <h2 class="info-2">EXPERIENCIA</h2>
+                    <div class="telefonos">
+                                <div data-aos="fade-right"><img src="miniaturas/phone 1.png" alt=""></div>
+                                <div data-aos="fade-up"><img src="miniaturas/phone 2.png" alt=""></div>
+                                <div data-aos="fade-left"><img src="miniaturas/phone 3.png" alt=""></div>
+                     </div>
 
                 </article>
             </section>
@@ -86,7 +153,7 @@
             <div class="grupo-1">
                  <div class="box">
                      <figure>
-                         <a href="#inicio-logo">
+                         <a href="#articulo-1">
                             <img src="miniaturas/pc logo.png" alt="logo de la pagina">
                          </a>
                      </figure>
@@ -99,21 +166,25 @@
                  <div class="box">
                      <h2>CONTACTO</h2>
                      <div class="red-social">
-                         <a href="https://www.facebook.com/genafachiturro/" target="_blank" class="fa fa-facebook" title="facebook"></a>
-                         <a href="https://www.instagram.com/genalevato/" target="_blank" class="fa fa-instagram" title="instagram"></a>
-                         <a href="https://twitter.com/Genaxh_" target="_blank" class="fa fa-twitter" title="twitter"></a>
-                         <a href="https://www.youtube.com/channel/UCvK74M_pTQ1xReSQLaAQC8w" target="_blank" class="fa fa-youtube" title="youtube"></a>
+                        
+                         <a href="https://www.linkedin.com/in/genaro-levato-7118a7255/" target="_blank" class="fa-brands fa-linkedin" title="linkedin"></a>
+                         <a href="https://github.com/genaaah" target="_blank" class="fa-brands fa-github" title="github"></a>
                      </div>
                  </div>
             </div>
                 <div class="grupo-2">
-                    <small>&copy; 2022 <b>Soluciones Web</b> - Todos Los Derechos Reservados.</small>
+                    <small>&copy; 2022 <b>Genaro Levato</b> - Todos Los Derechos Reservados.</small>
                 </div>
 
             </footer>
 
         
-
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1300
+                });
+            </script>
 
 
     </body>
