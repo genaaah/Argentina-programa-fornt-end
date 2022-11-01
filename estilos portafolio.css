@@ -28,6 +28,7 @@ html{
 	background: black;
 	position: sticky;
 	top: 0;
+    z-index: 1;
 }
 
 a{
@@ -48,6 +49,28 @@ a{
 	background: rgb(141, 64, 160);
 	color: rgb(255, 255, 255);
 }
+
+.subtituloo{
+    position: absolute;
+    text-align: center;
+    font-size: 115px;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%) translateY(-50%);
+    color: transparent;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	background-image: url('./miniaturas/galaxy.jpg');
+	background-size: cover;
+	background-position-y: 900px;
+	
+	background-clip: text;
+	-webkit-background-clip: text;
+
+}
+
 
 .contenedor {
 	max-width: 1000px;
@@ -110,9 +133,9 @@ a{
     display: flex;
     max-width: 1200px;
     margin: auto;
-    margin-top: 150px;
+    padding-top: 150px;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .card{
@@ -217,12 +240,90 @@ a{
 
 
 .segundo{
-    position: relative;
-    display: flex;
     width: 100%;
     height: 90vh;
-    justify-content: center;
-    margin-top: 100px;
+    padding-top: 130px;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informacion{
+    text-align: center;
+    padding-bottom: 150px;
+    color: whitesmoke;
+}
+
+.sobre-mii{
+    display: flex;
+    padding-left: 50px;
+}
+
+.sobre-mii img{
+    width: 250px;
+    padding: 5px;
+}
+ .sobre-mii .php-imagen{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+ }
+ .sobre-mii .css-imagen{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+ }
+ .sobre-mii .html-imagen{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+ }
+ .sobre-mii .js-imagen{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+ }
+ .sobre-mii .java-imagen{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+ }
+ .sobre-mii .angular-imagen{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+ }
+
+
+ /* ARTICULO III */
+
+
+ .tecero{
+    width: 100%;
+    height: 90vh;
+    padding-top: 130px;
+}
+
+.info-2{
+    text-align: center;
+    padding-bottom: 150px;
+    color: whitesmoke;
+}
+
+.telefonos{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding-bottom: 300px;
 }
 
 
@@ -237,7 +338,7 @@ a{
 .pie-pagina{
     width: 100%;
     background-size: cover;
-    background-image: url(../programacion/miniaturas/olasNigger\ \(1\).svg);
+    background-image: url(miniaturas/olasNigger\ \(1\).svg);
     position: relative;
     bottom: 0;
 }
@@ -263,8 +364,9 @@ a{
 }
 .pie-pagina .grupo-1 .box h2{
     color: #fff;
-    margin-bottom: 125px;
+    margin-bottom: 30px;
     font-size: 20px;
+    margin-top: 100px;
 }
 .pie-pagina .grupo-1 .box p{
     color: #efefef;
@@ -294,6 +396,11 @@ a{
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 300;
+    font-size: 25px;
+}
 
 @media screen and (max-width:800px){
     .pie-pagina .grupo-1{
@@ -303,6 +410,78 @@ a{
         padding: 10px;
     }
 }
+
+
+
+
+/* form */
+.form-contact {
+    background: #FFF;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+  }
+  
+ .cartita {
+    width: 100%;
+    background: #881c7f;
+    overflow: hidden;
+    color: white;
+  }
+  
+  section span {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    padding: 2.5rem;
+  }
+  
+  .contact {
+    padding: .8rem;
+    overflow: hidden;
+    color: gray;
+  }
+  
+  .contact label, .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;   
+  }
+  
+  .contact label {
+    font-weight: 700;
+  }
+  
+  .contact input:not([type='submit']), .contact textarea {
+    border: none;
+    border-bottom: 2px solid #881c7f;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+  }
+  
+  .contact textarea {
+    min-height: 100px;
+  }
+  
+  input[type='submit'] {
+    padding: 10px;
+    background: #881c7f;
+    border: none;
+    color: white;
+    font-size: 20px;
+    /* pointer-events: none; */
+    cursor: pointer;
+  
+  }
+
+
+
+
 
 
 
